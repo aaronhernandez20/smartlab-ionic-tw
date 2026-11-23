@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ion-color-primary: #1d4ed8;
+  --ion-color-primary-rgb: 29, 78, 216;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #1a45be;
+  --ion-color-primary-tint: #3460dc;
+
+  --ion-background-color: #fff8e7;
+  --ion-text-color: #000000;
+  --ion-font-family: 'Arial Black', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Brutalismo: los componentes de Ionic usan Shadow DOM, por eso se estilan con variables CSS */
+.brutal-toolbar {
+  --background: #fde047;
+  --color: #000000;
+  --border-width: 0 0 4px 0;
+  --border-color: #000000;
+}
+
+.incident-item {
+  --background: #ffffff;
+  --padding-start: 16px;
+  --inner-padding-end: 16px;
+}
+
+.brutal-input {
+  --background: #ffffff;
+  --border-width: 0;
+}
+
+.brutal-searchbar {
+  --background: #ffffff;
+  --border-radius: 0;
+  --box-shadow: none;
+  --color: #000000;
+  --placeholder-color: #404040;
+  --placeholder-opacity: 1;
+  padding: 0;
+}
+
+.brutal-segment {
+  --background: #ffffff;
+}
+
+.brutal-segment ion-segment-button {
+  --color: #000000;
+  --color-checked: #000000;
+  --background-checked: #fde047;
+  --indicator-color: transparent;
+  --border-radius: 0;
+  font-weight: 900;
+  min-height: 48px;
+}
+
+.brutal-fab {
+  --background: #000000;
+  --background-hover: #000000;
+  --color: #fde047;
+  --border-radius: 0;
+  --box-shadow: 6px 6px 0 0 #ff5c5c;
+  width: 64px;
+  height: 64px;
+  transition: transform 0.15s;
+}
+
+.brutal-fab:hover {
+  transform: translate(3px, 3px);
+}
+
+.brutal-button {
+  --background: #000000;
+  --background-hover: #000000;
+  --color: #fde047;
+  --border-radius: 0;
+  --box-shadow: 6px 6px 0 0 #1d4ed8;
+  min-height: 52px;
+  text-transform: uppercase;
+  font-weight: 900;
+  transition: transform 0.15s;
+}
+
+.brutal-button:hover {
+  transform: translate(3px, 3px);
+}
